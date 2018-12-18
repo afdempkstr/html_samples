@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test page</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Test Page</h1>
+        </div>
+        <div id="article" style="font-family: 'Courier New', Courier, monospace">
+            <h2>Article</h2>
+            <p id="top">bla bla bla</p>
+            <p>Lorem ipsum dolor sit amet, apeirian eleifend scriptorem ea nec. Deserunt consequuntur mel ut, te vis illum consetetur disputationi. Sanctus noluisse legendos eos eu, labores definitionem ei per. Enim cibo no sit. Ubique singulis 
+                    volutpat ad eum, in usu nostrud docendi 
+                    tractatos. Autem salutatus percipitur 
+                    per no, eros electram an quo.</p>
+            <ol>
+                <li>First</li>
+                <li>Second
+                    <ul>
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                    </ul>
+                </li>
+                <li>Third</li>
+            </ol>
+        </div>
+
+
+        <!--<dl>
+            <dt>Key</dt>
+            <dd>Description</dd>
+            <dt>Key 2</dt>
+            <dd>Description 2</dd>
+        </dl> -->
+
+        <p>Lorem ipsum dolor sit amet, apeirian eleifend scriptorem ea nec. Deserunt consequuntur mel ut, te vis illum consetetur disputationi. Sanctus noluisse legendos eos eu, labores definitionem ei per. Enim cibo no sit. Ubique singulis 
+            volutpat ad eum, in usu nostrud docendi 
+            tractatos. Autem salutatus percipitur 
+            per no, eros electram an quo.
+            <img src="images/logo.png" alt="adfemp logo" width="50" height="50" vspace="60" hspace = "30"/>
+            Ut vim deserunt interesset contentiones, est putant hendrerit constituam id, sea dicant delicata deseruisse in. Te eam rebum maiorum dissentiet, ne eum congue laoreet. Sea in lobortis vituperatoribus, vix at regione hendrerit. Civibus voluptua argumentum cu vix.</p>
+        
+        <figure>
+            <img src="https://www.afdemp.org/wp-content/uploads/2017/03/AFDEmp100.png" alt="3rd party logo" />
+            <figcaption>Λεζάντα</figcaption>
+        </figure>
+        
+        <p><a href="mailto:george@gmail.com">Email me</a></p>
+        <p><a href="tel:+30 210 1112134">Call me</a></p>
+
+        <p><a href="https://www.afdemp.org" target="_blank" >afdemp</a></p>
+        <p><a href="#top" target="_self">Top</a></p>
+        <p><a href="test2.html">Second page</a></p>
+    
+        <table border="2" cellspacing="5" cellpadding="5">
+            <thead style="background-color:beige; color: blue">
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Cell 1</td>
+                    <td>Cell 2</td>
+                    <td colspan="2">Cell 3,4</td>
+                </tr>
+                <tr>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                </tr>
+                <tr>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer 1</td>
+                    <td>Footer 2</td>
+                    <td>Footer 3</td>
+                    <td>Footer 4</td>
+                </tr>
+            </tfoot>
+        </table>
+    
+    <p>.</p>
+    <div id="login">
+        <form id="loginform" method="get" action="https://www.in.gr/">
+            <fieldset>
+                <legend>Login Form</legend>
+                <label>Username
+                    <input name="username" type="text" size="50" required minlength="3" maxlength="20" placeholder="Your username" value="user"/> 
+                </label>
+                <br />
+                <label for="password">Password</label>
+                <input name="password" type="password" size="50" required minlength="3" />
+                <br />
+                <label>Option
+                    <input type="radio" name="options" value="option 1">Option 1</input>
+                    <input type="radio" name="options" value="option 2">Option 2</input>    
+                </label>
+                <br/>
+                <label>Checkboxes
+                    <input type="checkbox" name="check" value="check 1">Check 1</input>
+                    <input type="checkbox" name="check" value="check 2">Check 2</input>
+                </label>
+                <br/>
+                <label>Speed
+                    <input name="speed" type="range" min="0" max="100" step="5" value="25"/> 
+                </label>
+                <br />
+                <label>Speed
+                    <select name="selection">
+                        <optgroup label="First Group">
+                                <option value="first">First</option>
+                                <option value="second">Second</option>
+                                <option value="third" selected>Third</option>
+                        </optgroup>
+                        <optgroup label="Second Group">
+                                <option value="first">First</option>
+                                <option value="second">Second</option>
+                                <option value="third">Third</option>
+                        </optgroup>
+                        
+                    </select>
+                </label>
+                <br />
+                <label>Auto suggestions
+                    <input list="suggestions" name="suggest" type="text" size="50">
+                    <datalist id="suggestions">
+                        <option value="Bikes"></option>
+                        <option value="Cars"></option>
+                        <option value="Airplanes"></option>
+                    </datalist>
+                    </input> 
+                    
+                </label>
+                <br />
+                <textarea name="text" rows="5" cols="50">default value</textarea>
+                <br/>
+                <label for="file">Upload file:</label>
+                <input type="file" name="file" accept=".png">  
+                <br />
+                
+                <input type="submit" value="Login" />
+            </fieldset>
+        </form>
+    </div>
+
+    <p><br/><br/></p>
+    </body>
+</html>
