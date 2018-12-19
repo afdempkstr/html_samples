@@ -1,0 +1,37 @@
+div { background-color: #dddddd; color: red;}
+p { color: #000000; }
+#subtitle { color: blue; }
+.conclusion { font-family: monospace; }
+.heavy { font-weight: 600; }
+.superheavy { color: green; }
+.purple { color: purple; }
+h2, h3 { font-family: "Tahoma"; }
+h4, .purple { font-family: "Tahoma"; }
+p.heavy { margin-left: 50px; }
+
+#header {
+    background-color: black; 
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+    padding: 20px;
+}
+
+#header p { color: white;}
+
+#header li > a { color: green; }
+
+.first ~ li { font-weight: 700; font-style: italic;}
+
+#menu > li > ol > li { font-size: 50%; }
+
+#top + h2 { text-align: center; }
+
+h1 ~ p { background-color: orangered; }
+
+h1 + p { background-color: orange; }
+
+img[alt] { border-style: solid;  border-color: green; }
+
+img[alt$="test"] { border-width: 5px; }
+
+img[alt^="afdemp"] { border-color: blue; }
