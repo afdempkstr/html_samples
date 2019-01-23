@@ -1,0 +1,15 @@
+button {
+    background-color: aqua;
+}
+
+.bigtext {
+    font-size: large;
+}
+
+#top {
+    color: red;
+}
+
+#top p {
+    color: #000;
+}
