@@ -6,8 +6,29 @@
       <link href="jquerysample.css" rel="stylesheet" type="text/css" />
       <script type="text/javascript">
         $(document).ready(function(){
-        $('p').html('this text was injected by jquery');
+        $('p').first().html('<strong>this</strong> text was injected by jquery');
+        $('p:last').fadeOut(1500);
+        $('<ul><li>item 1</li></ul>').insertAfter('#top');
+        var buttonId = $('#mybutton').attr('id');
+        console.log(buttonId);
+        $('#mybutton').attr('value', 'THE BUTTON');
+        $('p:first').css('background-color', 'red');
+        $('ul').append('<li></li>');
+        $('ul').children().last().addClass('bigtext').text('in.gr');
+        
+        $('p').each(function(i, element) {
+          $('#top').append('<h3>' + $(element).text() + '</h3>');
+        });
 
+        $('li').parent().css('background-color', 'beige');
+
+        $('#mybutton').on('click hover mouseover', function(e) {
+          if(e.type == 'click') {
+            e.preventDefault();
+          } else {
+            $(this).css('color', 'blue');
+          }
+        })
 
       });
       </script>

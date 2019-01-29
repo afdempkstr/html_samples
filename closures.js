@@ -25,6 +25,15 @@ function foo() {
 	function bar() {
 		console.log( a );
     }
+
+    function set(x) {
+        a = x;
+    }
+
+    function baz() {
+        var a = 0;
+        return a+1;
+    }
     
     function double(a) {
         return a * 2;
@@ -32,17 +41,17 @@ function foo() {
 
     function api() {
         return {
-            x: bar,
-            d: double
+            Bar: bar,
+            Dbl: double,
+            Set: set,
+            Baz: baz
         }
     }
 
 	return api;
 }
 
-var baz = foo();
-console.log(baz);
-var bz = baz();
-console.log(baz().d(5));
 
-//baz();
+var api = foo();
+console.log(api);
+var apiObject = api();
