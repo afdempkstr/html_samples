@@ -8,18 +8,41 @@
     <title>Hello, world!</title>
     <script type="text/javascript">
         $(document).ready(function(){
+            $('#ajax1').on('click', function() {
+               $.ajax({
+                     url: "data/content.html",
+                     success: function(response) {
+                         $('#right').html(response);
+                     }
+                   })
+                });
+            
+            $('#ajax2').on('click', function() {
+            $.ajax({
+                    url: "data/content.json",
+                    success: function(response) {
+                        console.log(response);
+
+                        $('#right').append('<p>' + response.name + '</p>');
+
+                    }
+                })
+            });
+
         });
     </script>
 </head>
   <body>
     <div class="container">
-        <div id="top" class="col-md-6">
-            <p>First paragraph</p>
-            <button id="ajax1">Get HTML via ajax</button>
-            <button id="ajax2">Get JSON via ajax</button>
-        </div>
-        <div id="right" class="col-md-6">
+        <div class="row">
+            <div id="left" class="col-md-6">
+                <p>First paragraph</p>
+                <button id="ajax1">Get HTML via ajax</button>
+                <button id="ajax2">Get JSON via ajax</button>
+            </div>
+            <div id="right" class="col-md-6">
 
+            </div>
         </div>
     </div>
   </body>
