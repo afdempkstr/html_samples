@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>video</title>
+    </head>
+    <body>
+        <h1>Video killed the radio star!</h1>
+        <!-- Using multiple sources as fallbacks for a video tag -->
+        <video id="myvideo" width="600" controls
+        poster="https://upload.wikimedia.org/wikipedia/commons/e/e8/Elephants_Dream_s5_both.jpg"
+        autoplay loop src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4"
+        >
+        <!-- <source
+        src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4"
+        type="video/mp4">
+        <source
+        src="https://archive.org/download/ElephantsDream/ed_hd.ogv"
+        type="video/ogg">
+        <source
+        src="https://archive.org/download/ElephantsDream/ed_hd.avi"
+        type="video/avi"> -->
+        Your browser doesn't support HTML5 video tag.
+        </video>
+        <button id="stop" value="Stop">Stop</button>
+        <script type="text/javascript">
+            var videoelement = document.querySelector("#myvideo");
+            videoelement.addEventListener('volumechange', (event) => {
+                console.log('The volume changed.');
+                console.log(event);
+            });
+
+            var stopButton = document.querySelector("#stop");
+            stopButton.addEventListener('click', (event) => {
+                videoelement.pause();
+            });
+        </script>
+    </body>
+</html>
